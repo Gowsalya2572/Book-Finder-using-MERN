@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || "https://book-finder-using-mern.vercel.app/";
+const PORT = process.env.PORT || "https://book-finder-using-mern.vercel.app";
 const MONGODB_URI = process.env.MONGODB_URI ;
 
 // Connect to MongoDB
