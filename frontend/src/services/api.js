@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BACKEND = import.meta.env.VITE_BACKEND || "https://book-finder-using-mern.vercel.app/";
+const BACKEND = "https://book-finder-using-mern.vercel.app/";
 
 export const searchBooks = async (title, page = 1, limit = 20) => {
   const resp = await axios.get(`${BACKEND}/api/search`, { params: { title, page, limit } });
